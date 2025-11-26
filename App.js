@@ -1,6 +1,6 @@
-import Books from "Book"
-import BookByTitle from "BookByTitle"
-import BookByAuthor from "BookByAuthor"
+import Books from "./Book"
+import BookByTitle from "./BookByTitle"
+import BookByAuthor from "./BookByAuthor"
 
 export default function App(){
     return(
@@ -11,3 +11,4 @@ export default function App(){
          </main>
     )
 }
+
