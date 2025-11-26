@@ -4,13 +4,20 @@ const BookByAuthor = ({author}) => {
     const {data, loading, error} = useFetch(
         `/book/author/${author}`)
 
-console.log(data)
+//console.log(data)
 
 return data ? (
     <div>
         <h2>
-            {data}
+            Books By Harper Lee
         </h2>
+        <ul>
+        {data?.map(book => {
+            <li>
+                {book.title}
+            </li>
+        })}
+    </ul>
         
     </div>
 ):(
